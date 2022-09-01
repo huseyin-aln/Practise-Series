@@ -32,7 +32,7 @@ const SearchFilter = () => {
                             <h3>{val.title}</h3>
                             <p>
                                 {/* <p>{readmore ? info : `${info.substring(0,200)}...`} */}
-                                {readMore ? val.desc : val.desc.slice(0,200)                    + "..."}
+                                {readMore ? val.desc : val.desc.slice(0,200) + "..."}
                                 <button onClick={() => setReadMore(!readMore)}>
                                     {readMore ? 'show less' : 'read more'}
                                 </button>
