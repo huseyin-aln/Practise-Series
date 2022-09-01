@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import data from "../data"
+import data from "../data.json"
 import "./SearchFilter.css"
 
 const SearchFilter = () => {
@@ -9,16 +9,18 @@ const SearchFilter = () => {
     <div className="container">
         <h1>Search Filter</h1>
         <div className="input-container">
-            <input classname="search"  type="text" placeholder="Enter your search..."
+            <input className="search"  
+            type="text" 
+            placeholder="Enter your search..."
             onChange={(e) => setSearchTerm(e.target.value)}/>
         </div>
-
+{console.log(setSearchTerm)}
         <div className="data-container">
             {
                 data.filter((val) => {
-                    if (searchTerm == "") {
+                    if (searchTerm === "") {
                         return val;
-                    } else if (val.title.toLocaleLowercase().includes(searchTerm.toLocaleLowercase())) {
+                    } else if (val.title.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase())) {
                         return val;
                     }
                 }).map((val) => {
