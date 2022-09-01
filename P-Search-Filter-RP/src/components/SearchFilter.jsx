@@ -4,6 +4,8 @@ import "./SearchFilter.css"
 
 const SearchFilter = () => {
     const [searchTerm, setSearchTerm] = useState("");
+    const [readMore, setReadMore] = useState(false);
+    
     
   return (
     <div className="container">
@@ -14,7 +16,7 @@ const SearchFilter = () => {
             placeholder="Enter your search..."
             onChange={(e) => setSearchTerm(e.target.value)}/>
         </div>
-{console.log(setSearchTerm)}
+
         <div className="data-container">
             {
                 data.filter((val) => {
@@ -28,8 +30,14 @@ const SearchFilter = () => {
                         <div className="data" key={val.id}>
                             <img src={val.image} alt="img" />
                             <h3>{val.title}</h3>
-                            <p>{val.desc}</p>
-
+                            <p>
+                                {/* <p>{readmore ? info : `${info.substring(0,200)}...`} */}
+                                {readMore ? val.desc : val.desc.slice(0,200)                    + "..."}
+                                <button onClick={() => setReadMore(!readMore)}>
+                                    {readMore ? 'show less' : 'read more'}
+                                </button>
+                            </p>
+                        
                         </div>
                     )
                 })
