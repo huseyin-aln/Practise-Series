@@ -1,4 +1,4 @@
-const questions = [
+export const questions = [
     {
       text: "I see myself as a successful person.",
       options: [
@@ -58,4 +58,3 @@ const questions = [
     },
   ];
 
-export default questions

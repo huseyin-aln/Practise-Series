@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import "./TestCard.css"
-import questions from "../helpers/data"
+import {questions} from "../helpers/data"
 
 const TestCard = () => {
 
