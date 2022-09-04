@@ -1,3 +1,10 @@
+# P-Random-Color-Generator-RP
+
+
+![P-Random-Color-Generator-RP](https://user-images.githubusercontent.com/101873227/188286971-6eaca9de-bfe4-4476-bf06-d93943f959a0.gif)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
