@@ -1,3 +1,10 @@
+# P-ReactSlick-Carousel-RP
+
+
+![P-ReactSlick-Carousel-RP](https://user-images.githubusercontent.com/101873227/188664852-d2507669-e136-4b9e-a7e6-a05b86301ddf.gif)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
