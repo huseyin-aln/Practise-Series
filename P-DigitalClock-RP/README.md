@@ -1,3 +1,10 @@
+# P-DigitalClock-RP
+
+
+
+![P-DigitalClock-RP](https://user-images.githubusercontent.com/101873227/189219258-5e2e7dcc-701a-4688-94dd-dfdcc2af190c.gif)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
