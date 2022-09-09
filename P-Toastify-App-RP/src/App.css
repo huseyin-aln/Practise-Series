@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(108, 169, 238);
+}
+
+button {
+  padding: 20px 60px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  transition: .3s;
+  background-color: rgb(236, 57, 93);
+}
+
+button:hover {
+  background-color: rgb(220, 240, 46);
+  color: rgb(236, 57, 93);
+}
