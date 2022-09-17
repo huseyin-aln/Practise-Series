@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
   }
+
   section {
     width: 80%;
     margin: auto;
@@ -10,44 +11,54 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
   }
+
   .cards {
+    border: 1px solid #DDDDDD;
     width: 250px;
     padding: 20px;
   }
+
   .cards:hover {
-    box-shadow: 0 10px 10px 10px rbga(0, 0, 0, 0.1);
     cursor: pointer;
   }
+
   .image-box img {
     width: 150px;
     height: 200px;
+    position: relative;
+    left: 3rem;
   }
   
-  .image_box img {
-    width: 150px;
-    height: 200px;
-  }
   .details p:nth-child(1) {
-    font-weight: bold;
+    color: #439FC5;
+    margin-top: 1rem;
   }
+
   .details p:nth-child(2) {
-    color: grey;
+    color: #439FC5;
     font-size: 0.8rem;
   }
+
   .details p:nth-child(3) {
-    font-weight: bolx;
-    color: grey;
+    color: #B12704;
+    margin-top: 1rem;
   }
+
   .details button {
     padding: 5px 10px;
     border: none;
     font-weight: bold;
-    background-color: #83E85A;
+    background-color: #C45500;
+    color: white;
     outline: none;
     cursor: pointer;
     transition: .3s;
+    position: relative;
+    bottom: -10px;
+    left: 4.5rem;
   }
+
   .details button:hover{
-    background-color: black;
-    color: #83E85A;
+    background-color: #232F3E;
+    color: #C45500;
   }

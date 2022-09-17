@@ -45,7 +45,7 @@ const ShoppingCart = ({cart, setCart, handleChange}) => {
       }
       <div className="total">
         <span>Total Price of Your Cart</span>
-        <span>$ {price}</span>
+        <span>$ {price.toFixed(2)}</span>
       </div>
 
     </article>

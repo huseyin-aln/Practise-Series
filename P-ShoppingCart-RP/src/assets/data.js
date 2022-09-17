@@ -13,7 +13,7 @@ const data = [
       author: "Alex Jones",
       price: 8,
       img: "https://images-na.ssl-images-amazon.com/images/I/415tR+XH9NL._SX332_BO1,204,203,200_.jpg",
-      amount: 20.43,
+      amount: 1,
     },
     {
       id: 3,

@@ -1,15 +1,15 @@
 import React from "react";
-import { FaShoppingCart } from "react-icons/fa";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 import "./Navbar.css";
 
 const Navbar = ({setShow, size}) => {
   return (
     <nav>
       <div className="nav-box">
-        <span className="my-shop" onClick={() => setShow(true)}>My Shopping</span>
+        <span className="shop" onClick={() => setShow(true)}>{'< h-aln >'}</span>
         <div className="cart" onClick={() => setShow(false)}>
           <span>
-            <FaShoppingCart />
+            <AiOutlineShoppingCart />
           </span>
           <span>{size}</span>
         </div>
