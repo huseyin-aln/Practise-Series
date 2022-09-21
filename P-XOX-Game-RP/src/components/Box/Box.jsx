@@ -6,7 +6,7 @@ const Box = (props) => {
     const toggleText = () => {
         if (text === "") {
             setText(props.currentState)
-            props.changeTurn()
+            props.changeTurn(props.row, props.col)
         }
     }
     
