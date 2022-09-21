@@ -31,10 +31,10 @@ const ShoppingCart = ({cart, setCart, handleChange}) => {
               <img src={item.img} alt="itemimg" />
               <p>{item.title}</p>
             </div>
-            <div>
-              <button onClick={() => handleChange(item, 1)}>+</button>
-              <button>{item.amount}</button>
+            <div className="btn">
               <button onClick={() => handleChange(item, -1)}>-</button>
+              <button>{item.amount}</button>
+              <button onClick={() => handleChange(item, 1)}>+</button>
             </div>
             <div>
               <span>$ {item.price}</span>

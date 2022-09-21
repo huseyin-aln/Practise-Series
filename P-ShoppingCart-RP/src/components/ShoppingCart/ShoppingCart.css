@@ -7,7 +7,7 @@
     width: 60%;
     margin: auto;
   }
-  
+
   .cart-box img {
     width: 60px;
     height: 80px;
@@ -33,6 +33,12 @@
     padding-bottom: 5px;
   }
   
+  .btn {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+  }
+
   .cart-box div:nth-child(2) button {
     padding: 5px 10px;
     font-weight: bold;
@@ -50,9 +56,11 @@
     border-radius: 5px;
     cursor: pointer;
   }
+
   .cart-box div:nth-child(3) button:hover {
     background-color: #439FC5;
   }
+
   .cart-box div:nth-child(3) span {
     color: #B12704;
     padding: 5px 10px;
