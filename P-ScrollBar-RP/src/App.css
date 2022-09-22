@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: #393939;
+  height: 20px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.progress {
+  height: 20px;
+  background-color: rgb(23, 154, 230);
+  /* width: 15%; */
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+  letter-spacing: 2px;
+  color: #393939;
+}
+
+p {
+  width: 70%;
+  margin:0 auto ;
+  color: #393939;
+  font-weight: 600;
+  text-align:justify;
+}
