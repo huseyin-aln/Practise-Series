@@ -1,9 +1,9 @@
 import React from "react";
-import "./Input.css"
+import "./Screen.css"
 
-const Input = ({text, result}) => {
+const Screen = ({text, result}) => {
   return (
-    <div className="input-wrapper">
+    <div className="screen-container">
       <div className="screen-up">
         <h1>{result}</h1>
       </div>
@@ -14,4 +14,4 @@ const Input = ({text, result}) => {
   )
 };
 
-export default Input;
+export default Screen;

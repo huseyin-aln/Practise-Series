@@ -1,6 +1,6 @@
 import "./App.css";
 import Button from "./components/Button/Button";
-import Input from "./components/Input/Input";
+import Screen from "./components/Screen/Screen";
 import {useState} from "react"
 import * as math from "mathjs"
 
@@ -10,7 +10,7 @@ function App() {
   const [result, setResult] = useState("");
   
   const addToText = (val) => {
-    setText((text) => [...text, val + " "])
+    setText((text) => [...text, val])
   }
 
   const resetInput = () => {
@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <Input text={text} result={result}/>
+        <Screen text={text} result={result}/>
         <div className="row">
           <Button symbol="7" handleClick={addToText}/>
           <Button symbol="8" handleClick={addToText}/>
