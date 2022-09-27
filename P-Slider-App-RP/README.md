@@ -1,3 +1,9 @@
+# P-Slider-App-RP
+
+
+![P-Slider-App-RP](https://user-images.githubusercontent.com/101873227/192542326-72c8f9cd-a348-40f0-840a-665d0eea4ae9.gif)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
