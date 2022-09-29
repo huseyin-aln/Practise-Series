@@ -7,7 +7,8 @@ function App() {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(false);
   const [page, setPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(5);
+  // const [totalPages, setTotalPages] = useState(5);
+  const totalPages = 5;
 
   useEffect(() => {
     const fetchUsers = async () => {
