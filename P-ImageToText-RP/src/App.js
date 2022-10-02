@@ -13,12 +13,12 @@ function App() {
     await worker.loadLanguage("eng");
     await worker.initialize("eng");
     const { data } = await worker.recognize(selectedImage);
-    console.log(data);
+    // console.log(data);
     await worker.terminate();
     setTextResult(data.text)
   };
 
-  useEffect(()=>{
+  useEffect(() => {
     convertImageToText();
   },[selectedImage])
 
