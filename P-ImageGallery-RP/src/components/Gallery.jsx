@@ -7,26 +7,27 @@ const Gallery = () => {
   const [picture, setPicture] = useState(false);
   const [tempImgSrc, setTempImgSrc] = useState("");
 
-  const getImg = (imgSrc) => {
-    setTempImgSrc(imgSrc);
+  const getImg = (img) => {
+    setTempImgSrc(img);
     setPicture(true);
   };
 
   return (
     <>
-      <div className={picture ? "open" : "picture"}>
+      <div className={picture ? "picture open" : "picture"}>
         <img src={tempImgSrc} alt="" />
-        <FaWindowClose onClick={() => setPicture(false)} />
+        <FaWindowClose className="x" onClick={() => setPicture(false)} />
       </div>
       <div className="gallery">
         {Images.map((item, index) => {
           return (
-            <div
-              className="pics"
-              key={index}
-              onClick={() => getImg(item.image)}
-            >
-              <img src={item.image} alt="" style={{ width: "100%" }} />
+            <div className="pics" key={index}>
+              <img
+                src={item.image}
+                alt=""
+                style={{ width: "100%" }}
+                onClick={() => getImg(item.image)}
+              />
             </div>
           );
         })}
