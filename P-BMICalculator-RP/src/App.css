@@ -15,11 +15,12 @@
 
 .container {
   margin-top: 20px;
-  height: 500px;
+  height: 620px;
   width: 400px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 8px;
   padding: 1rem;
+  font-weight: 600;
 }
 
 input {
@@ -48,7 +49,7 @@ input {
   background-color: #dcdde6;
   color: black;
   border: 1px solid #dcdde6;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .btn:hover {
@@ -70,7 +71,7 @@ p {
 }
 
 .img-container {
-  width: 200px;
+  width: 280px;
   height: 200px;
   display: flex;
   align-items: center;
@@ -79,7 +80,7 @@ p {
 }
 
 .img-container img {
-  width: 200px;
+  width: 280px;
   height: 180px;
   object-fit: contain;
   border-radius: 28px;

@@ -2,15 +2,15 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [weight, setWeight] = useState(0);
-  const [height, setHeight] = useState(0);
+  const [weight, setWeight] = useState("");
+  const [height, setHeight] = useState("");
   const [bmi, setBmi] = useState("");
   const [image, setImage] = useState("");
   const [message, setMessage] = useState("");
 
   const calcBmi = (e) => {
     e.preventDefault();
-    if (weight === 0 || height === 0) {
+    if (weight === "" || height === "") {
       alert("Please enter weight and height...");
     } else {
       let bmi = weight / (height * height);
@@ -18,20 +18,22 @@ function App() {
 
       if (bmi <= 18) {
         setMessage("You are weak");
-        setImage("https://i.ytimg.com/vi/okoB9frBGIw/hqdefault.jpg");
+        setImage(
+          "https://cdn1.vectorstock.com/i/thumb-large/23/30/muscle-weakness-rgb-color-icon-vector-40002330.jpg"
+        );
       } else if (bmi <= 25 && bmi > 18) {
         setMessage("You are normal");
         setImage(
-          "https://galeri.uludagsozluk.com/33/kurtlar-vadisi-pusu-kazim_42709.jpg"
+          "https://www.freeiconspng.com/thumbs/fitness-icon-png/gym-icon-png-kansas-city-5.png"
         );
       } else if (bmi <= 30 && bmi > 25) {
         setMessage("You are fat");
-        setImage(
-          "https://galeri13.uludagsozluk.com/713/kurtlar-vadisi-abidin_2162358.jpg"
-        );
+        setImage("https://cdn-icons-png.flaticon.com/512/1951/1951542.png");
       } else if (bmi <= 35 && bmi > 30) {
         setMessage("You are obese");
-        setImage("https://i.ytimg.com/vi/IPbyySh9ROM/hqdefault.jpg");
+        setImage(
+          "https://www.logogallery.net/wp-content/uploads/2020/12/580363563fac0626f3f8d6b39b84d803.png"
+        );
       } else if (bmi >= 35) {
         setMessage("Morbid obesity");
       }
@@ -53,10 +55,11 @@ function App() {
               type="text"
               value={weight}
               onChange={(e) => setWeight(e.target.value)}
+              onFocus
             />
           </div>
           <div>
-            <label htmlFor="">Height (cm)</label>
+            <label htmlFor="">Height (m)</label>
             <input
               type="text"
               value={height}
@@ -76,13 +79,18 @@ function App() {
             </button>
           </div>
         </form>
-        <div className="center">
-          <h3>Your Bmi is : {bmi}</h3>
-          <p>{message}</p>
-        </div>
-        <div className="img-container">
-          <img src={image} alt="bmi-img" />
-        </div>
+        {bmi && (
+          <>
+            <div className="center">
+              <h3>Your Bmi is : {bmi}</h3>
+              <p>{message}</p>
+            </div>
+
+            <div className="img-container">
+              <img src={image} alt="bmi-img" />
+            </div>
+          </>
+        )}
       </div>
     </div>
   );
