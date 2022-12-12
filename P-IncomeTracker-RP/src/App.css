@@ -5,7 +5,7 @@
 }
 
 .App {
-  background-color: rgb(94, 88, 88);
+  background-color: #232f3e;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -17,19 +17,22 @@
 header {
   margin: 20px 0;
   width: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 h1 {
   letter-spacing: 1.5px;
+  color: #cadefc;
 }
 
 header .total-income {
-  font-size: 25px;
+  margin: 20px 0;
+  font-size: 1rem;
+  text-align: center;
   background-color: #cadefc;
   padding: 5px 20px;
+  border-radius: 4px;
 }
 
 .form-inner input {
