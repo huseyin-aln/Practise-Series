@@ -3,10 +3,13 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+/*----------- navbar ---------- */
+
 .navbar {
   width: 100%;
   height: 100px;
-  background: #21325e;
+  background: #232f3e;
 }
 
 .links {
@@ -23,6 +26,11 @@
   text-decoration: none;
   margin: 20px;
   font-size: 25px;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: #d31010;
 }
 
 .toggleButton {
@@ -85,61 +93,30 @@
     flex-direction: row;
   }
 }
-/* navbar css bitiş */
-/* footer css başlangıç*/
-.footer {
-  width: 100%;
-  height: 200px;
-  background: #21325e;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 10px;
-  margin-top: 200px;
-}
 
-.socialMedia svg {
-  color: white;
-  margin: 20px;
-  font-size: 70px;
-  cursor: pointer;
-}
+/*----------- home ---------- */
 
-.footer p {
-  color: white;
-}
-
-@media only screen and (max-width: 600px) {
-  .footer svg {
-    font-size: 50px;
-  }
-}
-/* footer css bitiş */
-/* home css başlangıç */
 .home {
   width: 100%;
   align-items: center;
   font-family: "Arial", sans-serif;
-  color: #3e497a;
 }
 
 .about {
   width: 100%;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 280px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #21325e;
-  color: #f0f0f0;
+  color: #232f3e;
 }
 
 .about h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 80px;
-  color: #e9d35b;
+  color: #232f3e;
   height: 50px;
   margin-bottom: 70px;
 }
@@ -147,11 +124,12 @@
 .about .prompt {
   width: 40%;
   font-size: 30px;
+  color: #d31010;
 }
 .prompt svg {
   font-size: 60px;
-  margin: 5px;
-  color: white;
+  margin: 50px 5px;
+  color: #232f3e;
 }
 
 .skills {
@@ -179,7 +157,7 @@
 .skills h2 {
   margin-top: 20px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .about h2 {
     font-size: 40px;
   }
@@ -201,39 +179,62 @@
     font-size: 30px;
   }
 }
-/* home bitiş */
-/* experience başlangıç */
-.expContainer {
-  width: 100%;
-  height: calc(100vh - 300px);
-}
-.expElements {
-  padding: 15px;
-  width: 70%;
-  margin: auto;
-}
-.expElements ol {
+
+/*----------- experience ---------- */
+
+.skillsMainDiv {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+
+.skillDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+
+.skill {
+  max-width: 230px;
+  height: 200px;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  background-color: #c3c8ca;
+  border-radius: 12px;
+  padding: 0 1rem;
 }
-.expElements ol li {
-  margin: 15px;
-  text-align: center;
-  list-style-type: none;
-  letter-spacing: 1.5px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+.skill:hover {
+  transform: scale(1.05);
 }
-.expElements ol li svg {
-  font-size: 30px;
-  color: #21325e;
+
+.skill img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 130px;
+  object-fit: contain;
 }
-/* projectItem css başlangıç */
+
+.skillTitle {
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 600;
+}
+
+/*----------- projectItem ---------- */
+
 .projectItem {
   width: 250px;
   height: 250px;
-  background-color: #3e497a;
+  background-color: #232f3e;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -250,22 +251,27 @@
   opacity: 0.7;
 }
 .projectItem img {
-  width: 230px;
-  height: 180px;
+  width: 200px;
+  height: 150px;
 }
 .projectItem h1 {
   color: white;
+  font-size: 1.2rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-/* projectItem css bitiş */
-/* projects.js başlangıç */
+
+/*----------- projects ---------- */
+
 .projects {
   width: 100%;
   text-align: center;
   padding: 10px;
 }
+.projects .header {
+  color: #d31010;
+}
 .projectList {
-  width: 70%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -273,28 +279,32 @@
   margin-top: 20px;
   flex-wrap: wrap;
 }
-/* projectdisplay css başlangıç */
-.project {
-  width: 100%;
-  height: calc(100vh - 100px);
+
+/* -------- footer ---------*/
+
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 10px;
 }
 
-.project h1 {
-  margin-top: 50px;
-  color: #3e497a;
-  font-size: 35px;
-}
-.project img {
-  width: 700px;
-  border-radius: 10px;
-  margin: 15px 0;
+.socialMedia svg {
+  color: #232f3e;
+  margin: 20px;
+  font-size: 70px;
+  cursor: pointer;
 }
 
-.project svg {
-  font-size: 60px;
-  color: #3e497a;
+.footer p {
+  color: #232f3e;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer svg {
+    font-size: 50px;
+  }
 }

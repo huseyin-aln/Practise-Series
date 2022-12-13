@@ -4,7 +4,7 @@ const ProjectItem = ({ image, name }) => {
   return (
     <div className="projectItem">
       <div className="picture">
-        <img src={image} alt="img" />
+        <img src={`/images/${image}.PNG`} alt={name} />
       </div>
       <h1>{name}</h1>
     </div>

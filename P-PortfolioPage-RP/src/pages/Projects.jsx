@@ -5,10 +5,10 @@ import data from "../helpers/data";
 const Projects = () => {
   return (
     <div className="projects">
-      <h1>Projects</h1>
+      <h1 className="header">My Projects</h1>
       <div className="projectList">
         {data.map((project) => {
-          return <ProjectItem name={project.name} image={project.image} />;
+          return <ProjectItem key={project.id} {...project} />;
         })}
       </div>
     </div>
